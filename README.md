@@ -11,3 +11,12 @@ Services are grouped by functionality, not kind.
 ## Try it
 - Set your AWS_PROFILE variable.
 - Generate ssh key to ssh into servers.
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+```
+terraform destroy
+```
