@@ -1,11 +1,11 @@
 # Server definition
 # template taken from:
 # https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
-module "ec2_instance" {
+module "jenkins1" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
-  name = "single-instance"
+  name = "jenkins1"
 
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
