@@ -1,11 +1,11 @@
 # Virtual Private Cloud
-# template taken from:
+# docs from:
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
-resource "aws_vpc" "main" {
+resource "aws_vpc" "vpc1" {
   cidr_block       = "10.0.0.0/16"
   instance_tenancy = "default"
 
   tags = {
-    Name = "main"
+    Name = "vpc1"
   }
 }

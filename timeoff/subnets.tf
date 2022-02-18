@@ -1,11 +1,11 @@
 # Subnets
-# template taken from:
+# docs from:
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
-resource "aws_subnet" "main" {
-  vpc_id     = aws_vpc.main.id
+resource "aws_subnet" "sn1" {
+  vpc_id     = aws_vpc.vpc1.id
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = "Main"
+    Name = "sn1"
   }
 }
